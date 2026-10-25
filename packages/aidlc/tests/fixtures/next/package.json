@@ -1,0 +1,15 @@
+{
+  "name": "next-fixture",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

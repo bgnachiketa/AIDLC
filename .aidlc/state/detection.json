@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "monorepo": true,
+  "technologies": [
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "confidence": "high",
+      "roots": [
+        ".",
+        "extensions/vscode",
+        "packages/aidlc"
+      ]
+    }
+  ],
+  "warnings": [],
+  "assumptions": [],
+  "projects": [
+    {
+      "root": ".",
+      "name": "aidlc-workspace",
+      "technologies": [
+        "nodejs"
+      ],
+      "databases": [],
+      "patterns": [],
+      "commands": {
+        "format": null,
+        "lint": {
+          "command": "npm",
+          "args": [
+            "run",
+            "lint"
+          ],
+          "cwd": ".",
+          "source": "package.json scripts.lint"
+        },
+        "typecheck": {
+          "command": "npm",
+          "args": [
+            "run",
+            "typecheck"
+          ],
+          "cwd": ".",
+          "source": "package.json scripts.typecheck"
+        },
+        "test": {
+          "command": "npm",
+          "args": [
+            "run",
+            "test"
+          ],
+          "cwd": ".",
+          "source": "package.json scripts.test"
+        },
+        "integration": null,
+        "e2e": null,
+        "build": {
+          "command": "npm",
+          "args": [
+            "run",
+            "build"
+          ],
+          "cwd": ".",
+          "source": "package.json scripts.build"
+        },
+        "security": null
+      }
+    },
+    {
+      "root": "extensions/vscode",
+      "name": "aidlc-vscode",
+      "technologies": [
+        "nodejs"
+      ],
+      "databases": [],
+      "patterns": [],
+      "commands": {
+        "format": null,
+        "lint": {
+          "command": "npm",
+          "args": [
+            "run",
+            "lint"
+          ],
+          "cwd": "extensions/vscode",
+          "source": "package.json scripts.lint"
+        },
+        "typecheck": {
+          "command": "npm",
+          "args": [
+            "run",
+            "typecheck"
+          ],
+          "cwd": "extensions/vscode",
+          "source": "package.json scripts.typecheck"
+        },
+        "test": {
+          "command": "npm",
+          "args": [
+            "run",
+            "test"
+          ],
+          "cwd": "extensions/vscode",
+          "source": "package.json scripts.test"
+        },
+        "integration": null,
+        "e2e": null,
+        "build": {
+          "command": "npm",
+          "args": [
+            "run",
+            "build"
+          ],
+          "cwd": "extensions/vscode",
+          "source": "package.json scripts.build"
+        },
+        "security": null
+      }
+    },
+    {
+      "root": "packages/aidlc",
+      "name": "aidlc",
+      "technologies": [
+        "nodejs"
+      ],
+      "databases": [],
+      "patterns": [],
+      "commands": {
+        "format": null,
+        "lint": {
+          "command": "npm",
+          "args": [
+            "run",
+            "lint"
+          ],
+          "cwd": "packages/aidlc",
+          "source": "package.json scripts.lint"
+        },
+        "typecheck": {
+          "command": "npm",
+          "args": [
+            "run",
+            "typecheck"
+          ],
+          "cwd": "packages/aidlc",
+          "source": "package.json scripts.typecheck"
+        },
+        "test": {
+          "command": "npm",
+          "args": [
+            "run",
+            "test"
+          ],
+          "cwd": "packages/aidlc",
+          "source": "package.json scripts.test"
+        },
+        "integration": null,
+        "e2e": null,
+        "build": {
+          "command": "npm",
+          "args": [
+            "run",
+            "build"
+          ],
+          "cwd": "packages/aidlc",
+          "source": "package.json scripts.build"
+        },
+        "security": null
+      }
+    }
+  ]
+}

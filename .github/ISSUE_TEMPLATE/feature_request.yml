@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a change with the user outcome and the boundaries of the work.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      description: What should a person be able to do when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: bounds
+    attributes:
+      label: Out of scope
+      description: What should this change avoid?
+    validations:
+      required: false
+  - type: textarea
+    id: risk
+    attributes:
+      label: Security, data, or rollout risk
+      description: Call out auth, migrations, and compatibility. Write "None" if appropriate.
+    validations:
+      required: true

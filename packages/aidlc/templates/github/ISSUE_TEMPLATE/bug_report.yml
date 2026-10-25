@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a defect with the behavior, scope, and checks you already ran.
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: Describe what should happen and what happens instead.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Package, route, or module affected.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks already run
+      description: Include commands and results. Do not paste secrets.
+    validations:
+      required: false

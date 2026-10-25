@@ -1,0 +1,147 @@
+# AIDLC repository configuration.
+# Edit values in place. Re-running init preserves existing keys.
+# schemaVersion 1
+schemaVersion: 1
+repositoryId: path:f320aae87876c855
+repositoryPathId: path:f320aae87876c855
+technologies:
+  - id: nodejs
+    name: Node.js
+    confidence: high
+    roots:
+      - .
+      - extensions/vscode
+      - packages/aidlc
+directories:
+  - .
+  - extensions/vscode
+  - packages/aidlc
+commands:
+  .:
+    format: null
+    lint:
+      command: npm
+      args:
+        - run
+        - lint
+      cwd: .
+      source: package.json scripts.lint
+    typecheck:
+      command: npm
+      args:
+        - run
+        - typecheck
+      cwd: .
+      source: package.json scripts.typecheck
+    test:
+      command: npm
+      args:
+        - run
+        - test
+      cwd: .
+      source: package.json scripts.test
+    integration: null
+    e2e: null
+    build:
+      command: npm
+      args:
+        - run
+        - build
+      cwd: .
+      source: package.json scripts.build
+    security: null
+  extensions/vscode:
+    format: null
+    lint:
+      command: npm
+      args:
+        - run
+        - lint
+      cwd: extensions/vscode
+      source: package.json scripts.lint
+    typecheck:
+      command: npm
+      args:
+        - run
+        - typecheck
+      cwd: extensions/vscode
+      source: package.json scripts.typecheck
+    test:
+      command: npm
+      args:
+        - run
+        - test
+      cwd: extensions/vscode
+      source: package.json scripts.test
+    integration: null
+    e2e: null
+    build:
+      command: npm
+      args:
+        - run
+        - build
+      cwd: extensions/vscode
+      source: package.json scripts.build
+    security: null
+  packages/aidlc:
+    format: null
+    lint:
+      command: npm
+      args:
+        - run
+        - lint
+      cwd: packages/aidlc
+      source: package.json scripts.lint
+    typecheck:
+      command: npm
+      args:
+        - run
+        - typecheck
+      cwd: packages/aidlc
+      source: package.json scripts.typecheck
+    test:
+      command: npm
+      args:
+        - run
+        - test
+      cwd: packages/aidlc
+      source: package.json scripts.test
+    integration: null
+    e2e: null
+    build:
+      command: npm
+      args:
+        - run
+        - build
+      cwd: packages/aidlc
+      source: package.json scripts.build
+    security: null
+conventions:
+  baseBranch: main
+  branchPattern: "{type}/{planId}-{slug}"
+  commitStyle: conventional
+qualityGates:
+  required:
+    - test
+  optional:
+    - lint
+    - typecheck
+    - build
+integrations:
+  claude: true
+  codex: true
+  cursor: true
+  vscode: true
+  gitHost: github
+plans:
+  directory: .aidlc/plans
+  activePointer: .aidlc/state/active-plan.json
+policy:
+  fileChanges: prompt
+  shell: prompt
+  commit: prompt
+  network: prompt
+  pullRequest: prompt
+  allowDestructive: false
+  allowFailedGateCommit: false
+ignore: []

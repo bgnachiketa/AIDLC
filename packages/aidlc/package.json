@@ -1,0 +1,51 @@
+{
+  "name": "aidlc",
+  "version": "0.1.0",
+  "description": "IDE-agnostic AI development lifecycle toolkit. Shared planning, validation, and Git workflow core with CLI and host adapters.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "aidlc": "./bin/aidlc.js",
+    "help-aidlc": "./bin/help-aidlc.js",
+    "plan-aidlc": "./bin/plan-aidlc.js",
+    "init-aidlc": "./bin/init-aidlc.js",
+    "execute-aidlc": "./bin/execute-aidlc.js",
+    "test-aidlc": "./bin/test-aidlc.js",
+    "commit-aidlc": "./bin/commit-aidlc.js",
+    "push-aidlc": "./bin/push-aidlc.js",
+    "archive-aidlc": "./bin/archive-aidlc.js",
+    "audit-aidlc": "./bin/audit-aidlc.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "eslint": "^9.26.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0",
+    "vitest": "^3.1.2"
+  },
+  "license": "MIT"
+}

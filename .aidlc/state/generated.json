@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "files": {
+    "AGENTS.md": {
+      "sha256": "a29e3513deee6261ecfdb7f2f261d7540403c4d5b8bc301ed971f51c7d7b164c"
+    },
+    ".aidlc/plans/README.md": {
+      "sha256": "9227590f438216553b409d536ff393507119b5702fea37282cabe5175e81c7a4"
+    },
+    ".aidlc/editors/vscode.md": {
+      "sha256": "96cd7d1eaa2f2d8af1f74af6633414bde97a0afa26257951fd166b307be9dc87"
+    },
+    "CLAUDE.md": {
+      "sha256": "512debb41f954057776e9d9872a3dfe574f1920a07dad39e4a30ac75eb3c8a5a"
+    },
+    ".claude/skills/aidlc/SKILL.md": {
+      "sha256": "4eba2cd1c92895b5f919c9a5611f526a698533e7812e6c38d1751c4b6a46a081"
+    },
+    ".claude/skills/help-aidlc/SKILL.md": {
+      "sha256": "1664a4b5d5ad1e759598e220aaf288d7f363a8a816f3fda29c96728581e96b99"
+    },
+    ".claude/skills/plan-aidlc/SKILL.md": {
+      "sha256": "2aceeb9ad20b173f753166c8932aa2dae898ed34aabd66c87ffa2e605c0e415c"
+    },
+    ".claude/skills/init-aidlc/SKILL.md": {
+      "sha256": "09fb83b73fd622a1a9cf4235f12259ae0c0136a10a37d42e6351d46a022547e8"
+    },
+    ".claude/skills/execute-aidlc/SKILL.md": {
+      "sha256": "d84cb31dcbb6f8800f624c7a3a1523f026926d0c559c3a444066d23f2af0f0ac"
+    },
+    ".claude/skills/test-aidlc/SKILL.md": {
+      "sha256": "83fd70404c1ebb2cdd24ae43c00d52e7d86198a439ecf2138219684a52dde0c6"
+    },
+    ".claude/skills/commit-aidlc/SKILL.md": {
+      "sha256": "7aa3ce951dbed9d9bef4601a814319ce513487accdc0b55df43893749dc48fe9"
+    },
+    ".claude/skills/push-aidlc/SKILL.md": {
+      "sha256": "0d9a8ec074bc171e1f15271847fe1591d93326260d8a5236014ddf0a260ecb6a"
+    },
+    ".claude/skills/aidlc-nodejs/SKILL.md": {
+      "sha256": "53f1e4d4c942881901f4a5b2edaf056653683a879858908fdb85aefc880ea637"
+    },
+    ".agents/skills/aidlc/SKILL.md": {
+      "sha256": "4eba2cd1c92895b5f919c9a5611f526a698533e7812e6c38d1751c4b6a46a081"
+    },
+    ".agents/skills/help-aidlc/SKILL.md": {
+      "sha256": "1664a4b5d5ad1e759598e220aaf288d7f363a8a816f3fda29c96728581e96b99"
+    },
+    ".agents/skills/plan-aidlc/SKILL.md": {
+      "sha256": "2aceeb9ad20b173f753166c8932aa2dae898ed34aabd66c87ffa2e605c0e415c"
+    },
+    ".agents/skills/init-aidlc/SKILL.md": {
+      "sha256": "09fb83b73fd622a1a9cf4235f12259ae0c0136a10a37d42e6351d46a022547e8"
+    },
+    ".agents/skills/execute-aidlc/SKILL.md": {
+      "sha256": "d84cb31dcbb6f8800f624c7a3a1523f026926d0c559c3a444066d23f2af0f0ac"
+    },
+    ".agents/skills/test-aidlc/SKILL.md": {
+      "sha256": "83fd70404c1ebb2cdd24ae43c00d52e7d86198a439ecf2138219684a52dde0c6"
+    },
+    ".agents/skills/commit-aidlc/SKILL.md": {
+      "sha256": "7aa3ce951dbed9d9bef4601a814319ce513487accdc0b55df43893749dc48fe9"
+    },
+    ".agents/skills/push-aidlc/SKILL.md": {
+      "sha256": "0d9a8ec074bc171e1f15271847fe1591d93326260d8a5236014ddf0a260ecb6a"
+    },
+    ".agents/skills/aidlc-nodejs/SKILL.md": {
+      "sha256": "53f1e4d4c942881901f4a5b2edaf056653683a879858908fdb85aefc880ea637"
+    },
+    ".cursor/rules/aidlc-lifecycle.mdc": {
+      "sha256": "d1e76081ec829cfddc133cd771f08b1d39fa11f2949226a6523e6e13433d377a"
+    },
+    ".cursor/rules/aidlc-nodejs.mdc": {
+      "sha256": "8fe6e5b63ae3c46c6b76ae38d646972f2cd0b370fd78d8895b338adf76fc2406"
+    },
+    "extensions/vscode/AGENTS.md": {
+      "sha256": "99e4b991888cac6b1cfcb60739aba718dc8a94395ffc6300e9d1fbb9f7497cdc"
+    },
+    "packages/aidlc/AGENTS.md": {
+      "sha256": "9eec390a9a992ae5c2951e2f2b577425efd6460b4d0643b3c8cd7faf6c80e6ca"
+    },
+    ".github/pull_request_template.md": {
+      "sha256": "d78f3c30b82644537b6de9ae8977f8cc4aad50efdacaa37db8b0d722848eb72d"
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.yml": {
+      "sha256": "0efd1767eeef17291cd83e168386239852150c51a1ba6b255da2556a86a76b25"
+    },
+    ".github/ISSUE_TEMPLATE/feature_request.yml": {
+      "sha256": "48af52eb3e3a84d2009ca5c11fd07194f6adb44d12b0f1eb8b3600502ee1ed40"
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "sha256": "8b09e7df09fc7534371988062769ee427af2954a02c04c763e8a8005be0f2be4"
+    },
+    ".aidlc/proposed/github/workflows/aidlc-ci.yml": {
+      "sha256": "e7ff20fd6f930d31363ea1812e8b3c60521c0a5312379ec9ba1e8866f22a9641"
+    },
+    ".aidlc/state/detection.json": {
+      "sha256": "714a76ef6b441d359ece5cf41e058fca727ec16a9271aeb350e01e27ceb01d67"
+    },
+    ".cursor/skills/help-aidlc/SKILL.md": {
+      "sha256": "1664a4b5d5ad1e759598e220aaf288d7f363a8a816f3fda29c96728581e96b99"
+    },
+    ".cursor/skills/plan-aidlc/SKILL.md": {
+      "sha256": "2aceeb9ad20b173f753166c8932aa2dae898ed34aabd66c87ffa2e605c0e415c"
+    },
+    ".cursor/skills/init-aidlc/SKILL.md": {
+      "sha256": "09fb83b73fd622a1a9cf4235f12259ae0c0136a10a37d42e6351d46a022547e8"
+    },
+    ".cursor/skills/execute-aidlc/SKILL.md": {
+      "sha256": "d84cb31dcbb6f8800f624c7a3a1523f026926d0c559c3a444066d23f2af0f0ac"
+    },
+    ".cursor/skills/test-aidlc/SKILL.md": {
+      "sha256": "83fd70404c1ebb2cdd24ae43c00d52e7d86198a439ecf2138219684a52dde0c6"
+    },
+    ".cursor/skills/commit-aidlc/SKILL.md": {
+      "sha256": "7aa3ce951dbed9d9bef4601a814319ce513487accdc0b55df43893749dc48fe9"
+    },
+    ".cursor/skills/push-aidlc/SKILL.md": {
+      "sha256": "0d9a8ec074bc171e1f15271847fe1591d93326260d8a5236014ddf0a260ecb6a"
+    }
+  }
+}

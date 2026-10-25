@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "plan-20261025-sample",
+  "repositoryId": "path:example",
+  "repositoryPathId": "path:example",
+  "title": "Add invoice export",
+  "changeType": "feature",
+  "status": "approved",
+  "createdAt": "2026-10-25T00:00:00.000Z",
+  "updatedAt": "2026-10-25T00:00:00.000Z",
+  "requirements": "Add a CSV export for paid invoices in the billing screen.",
+  "problemStatement": "This feature request needs an explicit plan before application code changes: Add a CSV export for paid invoices in the billing screen.",
+  "scope": ["Add a CSV export for paid invoices in the billing screen."],
+  "outOfScope": ["Unrelated refactors and drive-by cleanup."],
+  "scopePaths": ["."],
+  "architecture": {
+    "summary": "Single-project layout. Follow the existing billing module.",
+    "affectedComponents": ["billing"]
+  },
+  "design": "Add the smallest export path that reuses the existing invoice query and streams CSV output.",
+  "alternatives": [
+    { "name": "Minimal change", "tradeoffs": "Lower review risk and easier rollback. This is the default." }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Confirm affected components",
+      "description": "Read the billing module and record anything the plan missed.",
+      "kind": "inspect",
+      "status": "completed",
+      "dependsOn": [],
+      "paths": ["."],
+      "acceptanceCriteria": ["Affected components are confirmed or the plan is revised."],
+      "verify": null,
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "T2",
+      "title": "Implement the change",
+      "description": "Add the CSV export.",
+      "kind": "implement",
+      "status": "pending",
+      "dependsOn": ["T1"],
+      "paths": ["."],
+      "acceptanceCriteria": ["Paid invoices download as CSV."],
+      "verify": null,
+      "evidence": [],
+      "blockers": []
+    }
+  ],
+  "acceptanceCriteria": ["Paid invoices download as CSV.", "Required quality gates have a passing result."],
+  "testStrategy": ["Run the repository test command with test-aidlc."],
+  "security": ["Do not include customer secrets in the export or in logs."],
+  "performance": ["Stream rows instead of buffering every invoice."],
+  "database": ["No database change was identified."],
+  "observability": ["Do not log invoice payloads."],
+  "rollback": ["Revert the feature commit. Do not rewrite published history."],
+  "documentation": ["Update the billing example."],
+  "risks": ["This sample was written to show the schema. The JSON file is authoritative."],
+  "assumptions": [],
+  "questions": [],
+  "approval": { "status": "approved", "at": "2026-10-25T00:00:00.000Z", "note": "Sample plan." },
+  "validation": [],
+  "commits": [],
+  "revisions": [],
+  "exceptions": [],
+  "baseline": { "branch": "main", "head": null, "dirty": [], "capturedAt": "2026-10-25T00:00:00.000Z" },
+  "authoring": { "mode": "imported", "note": "Checked-in sample. No model provider was called." }
+}

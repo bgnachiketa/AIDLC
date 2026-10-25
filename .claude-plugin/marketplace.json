@@ -1,0 +1,13 @@
+{
+  "name": "aidlc",
+  "owner": {
+    "name": "AIDLC"
+  },
+  "plugins": [
+    {
+      "name": "aidlc",
+      "source": "./plugins/aidlc",
+      "description": "Chat commands for an AI development lifecycle. No Node.js or npm dependency."
+    }
+  ]
+}

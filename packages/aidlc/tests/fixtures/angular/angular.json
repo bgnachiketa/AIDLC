@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "projects": {
+    "angular-fixture": {
+      "projectType": "application",
+      "root": ""
+    }
+  }
+}

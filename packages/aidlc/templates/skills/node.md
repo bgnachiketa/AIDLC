@@ -1,0 +1,31 @@
+---
+name: aidlc-nodejs
+description: Node.js async errors, runtime compatibility, process lifecycle, logging, and shutdown standards for an AIDLC repository.
+---
+
+# Node.js
+
+## Runtime and packages
+
+- Stay on the Node.js version declared by the project. Do not use an API that the declared version does not support.
+- Use the existing package manager and lockfile. Do not add a second lockfile.
+- Add a dependency only when the plan needs behavior the repository cannot reasonably implement with the current dependencies.
+
+## Async errors
+
+- Handle promise rejection at the boundary that starts the work. Do not leave a floating promise.
+- Distinguish operational failures from programmer errors. Return or throw the project's existing error type.
+- Include a stable error code and a safe message. Keep stack traces and internal details out of client responses.
+
+## Process lifecycle
+
+- Release timers, servers, and file handles on shutdown.
+- Bound in-flight work. Do not start an unbounded number of concurrent tasks.
+- Set timeouts on outbound network calls.
+- Retry only an operation that is safe to repeat, and cap the attempts.
+
+## Logging
+
+- Use the project's logger. Do not print secrets, tokens, cookies, or personal data.
+- Log a correlation id when the project already has one.
+- Make startup and shutdown failures visible without dumping the environment.

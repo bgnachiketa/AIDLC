@@ -1,0 +1,28 @@
+---
+name: help-aidlc
+description: Show AIDLC commands, hosts, safety rules, and troubleshooting. Invoke only when the user types /help-aidlc in chat.
+disable-model-invocation: true
+---
+
+# /help-aidlc
+
+The user invoked this command from an installed AIDLC plugin. Do the work in this session.
+
+- Claude Code: `/aidlc:help-aidlc`
+- Codex: the `help-aidlc` skill from the installed plugin
+- VS Code: the matching AIDLC command from the installed VSIX
+
+Do not run npm, npx, a package script, or an `aidlc` binary. Do not install Node.js. This command has no npm dependency and no Node.js dependency.
+
+## Steps
+
+- Read `AGENTS.md` and `.aidlc/config.yaml` when they exist.
+- Answer in chat with the lifecycle commands, how to invoke each as `/<command>`, supported stacks, safety rules, and troubleshooting.
+- Do not tell the user to install a package or run a terminal command for help.
+- Treat `.aidlc/plans/<id>.json` as the plan of record. The Markdown view is not task state.
+- Do not report a command, test, commit, or pull request as successful unless you actually completed it and saw the result.
+- Do not force-push, bypass hooks, merge automatically, or run a destructive migration.
+
+## Command
+
+`/help-aidlc`

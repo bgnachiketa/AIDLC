@@ -1,0 +1,5 @@
+---
+description: AIDLC lifecycle and safety rules
+alwaysApply: true
+---
+Follow AGENTS.md. Invoke /init-aidlc, /plan-aidlc, /execute-aidlc, /test-aidlc, /commit-aidlc, and /push-aidlc from chat. They do not use npm. Do not invent test results, force-push, or merge automatically. JSON plan files are authoritative.

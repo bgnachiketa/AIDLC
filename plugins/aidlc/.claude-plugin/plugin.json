@@ -1,0 +1,8 @@
+{
+  "name": "aidlc",
+  "displayName": "AIDLC",
+  "version": "0.1.0",
+  "description": "Chat commands for an AI development lifecycle. Skills only. No Node.js or npm dependency.",
+  "license": "MIT",
+  "keywords": ["aidlc", "planning", "lifecycle"]
+}

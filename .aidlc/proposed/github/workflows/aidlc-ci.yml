@@ -1,0 +1,50 @@
+name: aidlc-ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install Node dependencies
+        run: npm ci
+      - name: . lint
+        run: npm run lint
+      - name: . typecheck
+        run: npm run typecheck
+      - name: . test
+        run: npm run test
+      - name: . build
+        run: npm run build
+      - name: extensions/vscode lint
+        working-directory: extensions/vscode
+        run: npm run lint
+      - name: extensions/vscode typecheck
+        working-directory: extensions/vscode
+        run: npm run typecheck
+      - name: extensions/vscode test
+        working-directory: extensions/vscode
+        run: npm run test
+      - name: extensions/vscode build
+        working-directory: extensions/vscode
+        run: npm run build
+      - name: packages/aidlc lint
+        working-directory: packages/aidlc
+        run: npm run lint
+      - name: packages/aidlc typecheck
+        working-directory: packages/aidlc
+        run: npm run typecheck
+      - name: packages/aidlc test
+        working-directory: packages/aidlc
+        run: npm run test
+      - name: packages/aidlc build
+        working-directory: packages/aidlc
+        run: npm run build

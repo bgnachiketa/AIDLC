@@ -1,0 +1,68 @@
+{
+  "name": "aidlc-vscode",
+  "displayName": "AIDLC",
+  "description": "Run the shared AIDLC lifecycle from the Command Palette. The extension calls the local core and does not require a model extension.",
+  "version": "0.1.0",
+  "publisher": "aidlc",
+  "private": true,
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:aidlc.help",
+    "onCommand:aidlc.plan",
+    "onCommand:aidlc.init",
+    "onCommand:aidlc.execute",
+    "onCommand:aidlc.test",
+    "onCommand:aidlc.commit",
+    "onCommand:aidlc.push",
+    "onCommand:aidlc.archive",
+    "onCommand:aidlc.audit"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "aidlc.help", "title": "AIDLC: Help" },
+      { "command": "aidlc.plan", "title": "AIDLC: Plan Change" },
+      { "command": "aidlc.init", "title": "AIDLC: Initialize Repository" },
+      { "command": "aidlc.execute", "title": "AIDLC: Execute Plan" },
+      { "command": "aidlc.test", "title": "AIDLC: Run Validation" },
+      { "command": "aidlc.commit", "title": "AIDLC: Commit Planned Changes" },
+      { "command": "aidlc.push", "title": "AIDLC: Push and Open Pull Request" },
+      { "command": "aidlc.archive", "title": "AIDLC: Archive Plan" },
+      { "command": "aidlc.audit", "title": "AIDLC: Write Changelog Audit" }
+    ],
+    "configuration": {
+      "title": "AIDLC",
+      "properties": {
+        "aidlc.yes": {
+          "type": "boolean",
+          "default": false,
+          "description": "Approve AIDLC policy prompts without a confirmation dialog. This does not allow force-push or destructive migrations."
+        },
+        "aidlc.dryRun": {
+          "type": "boolean",
+          "default": false,
+          "description": "Ask the core to preview init, commit, and publish actions without writing."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/vscode": "^1.90.0",
+    "esbuild": "^0.25.4",
+    "eslint": "^9.26.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0",
+    "vitest": "^3.1.2"
+  },
+  "license": "MIT"
+}

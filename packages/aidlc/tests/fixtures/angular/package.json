@@ -1,0 +1,16 @@
+{
+  "name": "angular-fixture",
+  "private": true,
+  "scripts": {
+    "test": "ng test",
+    "lint": "ng lint",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/core": "^19.0.0",
+    "@angular/common": "^19.0.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^19.0.0"
+  }
+}

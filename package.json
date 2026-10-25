@@ -1,0 +1,22 @@
+{
+  "name": "aidlc-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AIDLC workspace: an IDE-agnostic AI development lifecycle toolkit.",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/aidlc",
+    "extensions/vscode"
+  ],
+  "scripts": {
+    "build": "npm run build -w aidlc && npm run build -w aidlc-vscode",
+    "typecheck": "npm run typecheck -w aidlc && npm run typecheck -w aidlc-vscode",
+    "lint": "npm run lint -w aidlc && npm run lint -w aidlc-vscode",
+    "test": "npm run test -w aidlc && npm run test -w aidlc-vscode",
+    "aidlc": "node packages/aidlc/bin/aidlc.js"
+  },
+  "license": "MIT"
+}
